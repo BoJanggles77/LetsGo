@@ -1,7 +1,6 @@
 {
   "manifest_version": 2,
 
-<<<<<<< HEAD
   "name": "Translator",
   "description": "This extension allows the user to change the background color of the current page.",
   "version": "1.0",
@@ -9,15 +8,6 @@
   "browser_action": {
     "default_icon": "speech_text.png",
     "default_popup": "popup.html"
-=======
-  "name": "Speech to Text Translator",
-  "description": "Using the google translate API, this extension allows the user to speak into their microphone, and convert speech into desired text, which will auto-copy to their clipboard",
-  "version": "1.0",
-
-  "browser_action": {
-    "default_icon": "speech_text.jpg",
-    "default_popup": "ryan.html"
->>>>>>> 73baf5c849f2f811ea2a8d91dd1af60680fbd840
   },
   "permissions": [
     "activeTab",
