@@ -4,9 +4,10 @@
  "browser_action" field in manifest.json contains the "default_popup" key with
  value "popup.html".
  -->
+
 <html>
   <head>
-    <title>Getting Started Extension's Popup</title>
+    <title>Translator</title>
     <style type="text/css">
       body {
         margin: 10px;
@@ -24,25 +25,29 @@
       }
     </style>
 
-    <!--
-      - JavaScript and HTML must be in separate files: see our Content Security
-      - Policy documentation[1] for details and explanation.
-      -
-      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
-    -->
-    <script src="george.js"></script>
+    <script src="popup.js"></script>
   </head>
 
   <body>
     <h1>Translator</h1>
     <div id="container">
-
-
-
-      <form>
-        Input Text: <input type="text" translateText="TranslateText" value=""><br>
-        <input type="submit" value="Submit">
-      </form>
+      <span>Choose a Language</span>
+          <select id="dropdown">
+            <option value="en">English</option>
+            <option value="es">Spanish</option>
+            <option value="ja">Japanese</option>
+            <option value="zh-cn">Chinese Simplified</option>
+          </select>
     </div>
+
+    <div id="container">
+       <span>Input Text</span>
+          <input id="input" type="text" value=""><br>
+
+    </div>
+
+    <p id="demo"></p>
+    <button id="submit">Submit</button>
+    
   </body>
 </html>
