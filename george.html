@@ -30,20 +30,16 @@
       -
       - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
     -->
-    <script src="popup.js"></script>
+    <script src="./google-translate-api/index.js"></script>
   </head>
 
   <body>
-    <h1>Background Color Changer</h1>
+    <h1>Translate Text Input Field</h1>
     <div id="container">
-      <span>Choose a color</span>
-      <select id="dropdown">
-        <option selected disabled hidden value=''></option>
-        <option value="white">White</option>
-        <option value="pink">Pink</option>
-        <option value="green">Green</option>
-        <option value="yellow">Yellow</option>
-      </select>
+      <form action="/action_page.php">
+        Translate Text: <input type="text" name="FirstName" value=""><br>
+        <input type="submit" value="Submit">
+      </form>
     </div>
   </body>
 </html>
