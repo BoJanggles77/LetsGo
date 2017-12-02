@@ -32,8 +32,8 @@
   "homepage": "https://github.com/matheuss/google-translate-api#readme",
   "dependencies": {
     "configstore": "^2.0.0",
-    "google-translate-token": "latest",
-    "got": "^6.3.0",
+    "google-translate-token": "^1.0.0",
+    "got": "^6.7.1",
     "safe-eval": "^0.3.0"
   },
   "devDependencies": {
