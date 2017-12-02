@@ -7,7 +7,7 @@
 
   "browser_action": {
     "default_icon": "speech_text.jpg",
-    "default_popup": "popup.html"
+    "default_popup": "george.html"
   },
   "permissions": [
     "activeTab",
